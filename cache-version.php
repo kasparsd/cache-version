@@ -1,6 +1,12 @@
 <?php
 /*
 	Plugin Name: Cache Version
+	Description: Uses timestamp as cache version number.
+	Version: 0.1
+	Plugin URI: https://github.com/kasparsd/cache-version
+	GitHub URI: https://github.com/kasparsd/cache-version
+	Author: Kaspars Dambis
+	Author URI: http://kaspars.net
 */
 
 
@@ -8,6 +14,7 @@ add_action( 'admin_init', 'enable_cache_version_update' );
 
 function enable_cache_version_update() {
 
+	// Bump the version number during these action calls
 	$purge_actions = array(
 		'clean_post_cache',
 		'edit_term',
