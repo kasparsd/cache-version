@@ -10,12 +10,14 @@ function enable_cache_version_update() {
 
 	$purge_actions = array(
 		'clean_post_cache',
+		'edit_term',
 		'publish_post',
 		'comment_post',
 		'delete_comment',
 		'edit_comment',
 		'delete_post',
 		'edit_post',
+		'wp_update_nav_menu',
 		'activated_plugin',
 		'deactivated_plugin',
 		'wp_maybe_auto_update'
