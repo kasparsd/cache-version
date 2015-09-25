@@ -2,7 +2,7 @@
 /*
 	Plugin Name: Cache Version
 	Description: Uses timestamp as cache version number.
-	Version: 0.1
+	Version: 0.2
 	Plugin URI: https://github.com/kasparsd/cache-version
 	GitHub URI: https://github.com/kasparsd/cache-version
 	Author: Kaspars Dambis
@@ -10,7 +10,7 @@
 */
 
 
-add_action( 'admin_init', 'enable_cache_version_update' );
+add_action( 'plugins_loaded', 'enable_cache_version_update' );
 
 function enable_cache_version_update() {
 
