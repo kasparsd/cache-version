@@ -12,7 +12,7 @@ Adds a version number (a timestamp) of all content that can be used in cache key
 
 ## Description
 
-Stores a timestamp as `cache-version` in object cache and updates its value every time a post, 
+Stores a timestamp as `cache-version` in object cache and updates its value every time a post,
 comment, term or menu is created or updated. Also adds a `Last-Modified` header to all HTTP responses.
 
 
@@ -21,7 +21,7 @@ comment, term or menu is created or updated. Also adds a `Last-Modified` header 
 Install it from the official WordPress repository or use the plugin search in your WordPress dashboard.
 
 
-## Frequently Asked Questions 
+## Frequently Asked Questions
 
 None.
 
@@ -32,6 +32,9 @@ None.
 
 
 ## Changelog
+
+### 0.3 (June 21, 2016)
+* Use a transient to ensure it works on sites with no object caching enabled.
 
 ### 0.1
 * Initial release.
