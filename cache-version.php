@@ -13,7 +13,7 @@ Preseto_Cache_Version::instance();
 
 class Preseto_Cache_Version {
 
-	protected __construct() {
+	protected function __construct() {
 
 		add_action( 'plugins_loaded', array( $this, 'cache_bump_register' ) );
 
