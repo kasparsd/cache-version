@@ -3,7 +3,7 @@
 Contributors: kasparsd   
 Tags: cache, caching, performance, expiry, headers
 Requires at least: 3.0.1   
-Tested up to: 3.9   
+Tested up to: 4.5.2   
 Stable tag: trunk   
 License: GPLv2 or later   
 
@@ -12,8 +12,7 @@ Adds a version number (a timestamp) of all content that can be used in cache key
 
 ## Description
 
-Stores a timestamp as `cache-version` in object cache and updates its value every time a post,
-comment, term or menu is created or updated. Also adds a `Last-Modified` header to all HTTP responses.
+Stores a timestamp as `last-modified-timestamp` in a transient (or object cache, if enabled) and updates its value every time a post, comment, term or menu is created or updated. Adds a `Last-Modified` header to all HTTP responses.
 
 
 ## Installation
