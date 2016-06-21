@@ -21,7 +21,7 @@ class Preseto_Cache_Version {
 
 	}
 
-	public static instance() {
+	public static function instance() {
 		static $instance;
 
 		if ( ! isset( $instance ) ) {
@@ -55,14 +55,14 @@ class Preseto_Cache_Version {
 
 	}
 
-	function cache_bump() {
+	public function cache_bump() {
 
 		set_transient( 'last-modified-timestamp', time() );
 
 	}
 
 
-	function set_last_modified() {
+	public function set_last_modified() {
 
 		$version = get_transient( 'last-modified-timestamp' );
 
